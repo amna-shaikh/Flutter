@@ -8,9 +8,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: (
         Scaffold(body:Text("Hello, World"))
-      
+        appBar:new AppBar(
+        title: new Text("MyApp"),
+        ),
+        body:Center{
+        child:MyWidget(),
+        ),
     ),
     );
 }
-
 }
+claa MyWidgetextends StatelessWidger{
+@override
+ Widget build(BuildContext context) {
+    return Text(("Hello, World!");
+    }}
